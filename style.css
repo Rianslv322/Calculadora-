@@ -1,0 +1,79 @@
+CSS
+
+body {
+    display:  flex;
+    justify-content: center;
+    align-items: center;
+  height: 100vh;
+  background-color: #ccc;
+}
+
+
+.calculadora{
+
+background-color: rgb(252, 252, 252);
+padding:  20px;
+border-radius:  15px;
+box-shadow:  0 5px 20px rgba(0,0,0,0.2);
+text-align:  center;
+width:  320px;
+}
+
+.calculadora h2 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+
+#tela {
+  width: 90%;
+  height: 40px;
+  margin-bottom: 15px;
+  font-size: 28px;
+  text-align: right;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 50px;
+}
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+
+button {
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.botao-limpar {
+  background: #ff4d4d;
+  grid-column: span 2; 
+}
+
+
+.botao-operador {
+  background: #b79d7d;
+}
+
+
+.botao-numero {
+  background: #36404b;
+}
+
+
+.botao-igual {
+  background: #5fb689;
+  grid-row: span 2; 
+}
